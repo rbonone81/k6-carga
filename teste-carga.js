@@ -11,7 +11,7 @@ export default function () {
   const BASE_URL = 'https://test-api.k6.io/public/crocodiles/'
 
   const res = http.get(BASE_URL);
-  check(res, { 'status was 200': (r) => r.status === 200 });
+  check(res, { 'Validar se status é igual a 200': (r) => r.status === 200 });
   sleep(1);
 }
 
