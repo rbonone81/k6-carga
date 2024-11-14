@@ -10,7 +10,7 @@ Geração de relatório HTML.
 Para rodar os testes utilize o seguinte comando.
 
 ```bash
-  k6 run teste-carga.js
+  k6 run --env URL=https://test-api.k6.io/public/crocodiles/ .\teste-carga.js
 ```
 ## Relatório dos testes
 Para este teste foi utilizado o plugin pluK6 HTML Report Exporter v2 (https://github.com/benc-uk/k6-reporter).
